@@ -2,21 +2,42 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://yoursite.com/2016/02/26/p1/</loc>
+    <loc>http://yunegarden.cn/404.html</loc>
     
-    <lastmod>2016-02-26T13:22:02.924Z</lastmod>
+    <lastmod>2016-02-27T08:51:17.267Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://yoursite.com/2016/02/26/first-article/</loc>
+    <loc>http://yunegarden.cn/tags/index.html</loc>
+    
+    <lastmod>2016-02-27T08:34:54.451Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yunegarden.cn/categories/index.html</loc>
+    
+    <lastmod>2016-02-27T08:25:57.776Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yunegarden.cn/about/index.html</loc>
+    
+    <lastmod>2016-02-27T07:59:26.445Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yunegarden.cn/2016/02/26/first-article/</loc>
     
     <lastmod>2016-02-26T13:15:06.391Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://yoursite.com/2016/02/26/hello-world/</loc>
+    <loc>http://yunegarden.cn/2016/02/26/hello-world/</loc>
     
     <lastmod>2016-02-26T13:12:52.678Z</lastmod>
     

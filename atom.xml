@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Yune</title>
-  
+  <title>One Blog</title>
+  <subtitle>Writing 1000 Words a Day Changes My Life</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://yoursite.com/"/>
+  <link href="http://yunegarden.cn/"/>
   <updated>2016-02-26T13:12:52.678Z</updated>
-  <id>http://yoursite.com/</id>
+  <id>http://yunegarden.cn/</id>
   
   <author>
-    <name>John Doe</name>
+    <name>Yune</name>
     
   </author>
   
@@ -17,8 +17,8 @@
   
   <entry>
     <title></title>
-    <link href="http://yoursite.com/2016/02/26/hello-world/"/>
-    <id>http://yoursite.com/2016/02/26/hello-world/</id>
+    <link href="http://yunegarden.cn/2016/02/26/hello-world/"/>
+    <id>http://yunegarden.cn/2016/02/26/hello-world/</id>
     <published>2016-02-26T13:21:26.135Z</published>
     <updated>2016-02-26T13:12:52.678Z</updated>
     
@@ -42,29 +42,9 @@
   </entry>
   
   <entry>
-    <title>p1</title>
-    <link href="http://yoursite.com/2016/02/26/p1/"/>
-    <id>http://yoursite.com/2016/02/26/p1/</id>
-    <published>2016-02-26T13:20:34.000Z</published>
-    <updated>2016-02-26T13:22:02.924Z</updated>
-    
-    <content type="html">&lt;p&gt;可以了吗&lt;/p&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;可以了吗&lt;/p&gt;
-
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
     <title></title>
-    <link href="http://yoursite.com/2016/02/26/first-article/"/>
-    <id>http://yoursite.com/2016/02/26/first-article/</id>
+    <link href="http://yunegarden.cn/2016/02/26/first-article/"/>
+    <id>http://yunegarden.cn/2016/02/26/first-article/</id>
     <published>2016-02-26T13:15:06.391Z</published>
     <updated>2016-02-26T13:15:06.391Z</updated>
     
