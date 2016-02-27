@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yunegarden.cn/"/>
-  <updated>2016-02-26T13:12:52.678Z</updated>
+  <updated>2016-02-27T10:17:37.659Z</updated>
   <id>http://yunegarden.cn/</id>
   
   <author>
@@ -16,51 +16,15 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title></title>
-    <link href="http://yunegarden.cn/2016/02/26/hello-world/"/>
-    <id>http://yunegarden.cn/2016/02/26/hello-world/</id>
-    <published>2016-02-26T13:21:26.135Z</published>
-    <updated>2016-02-26T13:12:52.678Z</updated>
+    <title>Hometown</title>
+    <link href="http://yunegarden.cn/2016/02/27/Hometown/"/>
+    <id>http://yunegarden.cn/2016/02/27/Hometown/</id>
+    <published>2016-02-27T10:17:37.000Z</published>
+    <updated>2016-02-27T10:17:37.659Z</updated>
     
-    <content type="html">&lt;p&gt;#哈哈第一次尝试Markdown&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;是如此的好用&lt;br&gt;此为测试&lt;/p&gt;
-&lt;/blockquote&gt;
-</content>
+    <content type="html"></content>
     
     <summary type="html">
-    
-      &lt;p&gt;#哈哈第一次尝试Markdown&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;是如此的好用&lt;br&gt;此为测试&lt;/p&gt;
-&lt;/blockquote&gt;
-
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title></title>
-    <link href="http://yunegarden.cn/2016/02/26/first-article/"/>
-    <id>http://yunegarden.cn/2016/02/26/first-article/</id>
-    <published>2016-02-26T13:15:06.391Z</published>
-    <updated>2016-02-26T13:15:06.391Z</updated>
-    
-    <content type="html">&lt;p&gt;###折腾一下午完成的&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;适合极客操作&lt;/p&gt;
-&lt;/blockquote&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;###折腾一下午完成的&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;适合极客操作&lt;/p&gt;
-&lt;/blockquote&gt;
-
     
     </summary>
     
