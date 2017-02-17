@@ -71,7 +71,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content=".net,c#," />
+  <meta name="keywords" content="DOM,JavaScript," />
 
 
 
@@ -89,25 +89,46 @@
 
 
 
-<meta name="description" content="工程实践2感悟
-写代码的过程中要实时写注释，不要拖到工程完成时才来写注释，这时可能前面写的代码当时的思路已经忘记了，注释的目的为了以后自己重构时方便理解，同时也给其他开发者能轻松读懂你的代码
-在写代码开始前，对整个工程的设计很重要，这关系到后面写代码的困难与否。你设计时想的越透彻后面写代码时就越轻松。
-注重考虑用户的感受，我觉得软件是做给用户用的，就必须让用户用起来很方便，没有什么学习软件的成本。">
+<meta name="description" content="DOM操作节点是有类型的
+-&amp;gt; 标准DOM定 义中有12种-&amp;gt; 元素节点        1
+-&amp;gt; 文本节点        3
+-&amp;gt; 属性节点        2
+-&amp;gt; 获得方式
+为节点添加事件的方法
+L.onclick = function() {};
+
+如何获得节点
+节点对象  document.getElementById(“id的字符串”)
+获得页面中指定id的节">
 <meta property="og:type" content="article">
-<meta property="og:title" content="招投标工程总结">
-<meta property="og:url" content="http://wsgzao.github.io/post/招投标工程总结/index.html">
+<meta property="og:title" content="DOM">
+<meta property="og:url" content="http://wsgzao.github.io/post/DOM/index.html">
 <meta property="og:site_name" content="Yune">
-<meta property="og:description" content="工程实践2感悟
-写代码的过程中要实时写注释，不要拖到工程完成时才来写注释，这时可能前面写的代码当时的思路已经忘记了，注释的目的为了以后自己重构时方便理解，同时也给其他开发者能轻松读懂你的代码
-在写代码开始前，对整个工程的设计很重要，这关系到后面写代码的困难与否。你设计时想的越透彻后面写代码时就越轻松。
-注重考虑用户的感受，我觉得软件是做给用户用的，就必须让用户用起来很方便，没有什么学习软件的成本。">
-<meta property="og:updated_time" content="2016-03-24T14:39:11.826Z">
+<meta property="og:description" content="DOM操作节点是有类型的
+-&amp;gt; 标准DOM定 义中有12种-&amp;gt; 元素节点        1
+-&amp;gt; 文本节点        3
+-&amp;gt; 属性节点        2
+-&amp;gt; 获得方式
+为节点添加事件的方法
+L.onclick = function() {};
+
+如何获得节点
+节点对象  document.getElementById(“id的字符串”)
+获得页面中指定id的节">
+<meta property="og:updated_time" content="2017-02-17T06:32:40.337Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="招投标工程总结">
-<meta name="twitter:description" content="工程实践2感悟
-写代码的过程中要实时写注释，不要拖到工程完成时才来写注释，这时可能前面写的代码当时的思路已经忘记了，注释的目的为了以后自己重构时方便理解，同时也给其他开发者能轻松读懂你的代码
-在写代码开始前，对整个工程的设计很重要，这关系到后面写代码的困难与否。你设计时想的越透彻后面写代码时就越轻松。
-注重考虑用户的感受，我觉得软件是做给用户用的，就必须让用户用起来很方便，没有什么学习软件的成本。">
+<meta name="twitter:title" content="DOM">
+<meta name="twitter:description" content="DOM操作节点是有类型的
+-&amp;gt; 标准DOM定 义中有12种-&amp;gt; 元素节点        1
+-&amp;gt; 文本节点        3
+-&amp;gt; 属性节点        2
+-&amp;gt; 获得方式
+为节点添加事件的方法
+L.onclick = function() {};
+
+如何获得节点
+节点对象  document.getElementById(“id的字符串”)
+获得页面中指定id的节">
 
 
 
@@ -135,13 +156,13 @@
 
 
 
-  <link rel="canonical" href="http://wsgzao.github.io/post/招投标工程总结/"/>
+  <link rel="canonical" href="http://wsgzao.github.io/post/DOM/"/>
 
 
 
 
 
-  <title> 招投标工程总结 | Yune </title>
+  <title> DOM | Yune </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -278,7 +299,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="http://wsgzao.github.io/post/招投标工程总结/">
+  <link itemprop="mainEntityOfPage" href="http://wsgzao.github.io/post/DOM/">
 
   <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
     <meta itemprop="name" content="Yune">
@@ -302,7 +323,7 @@
             
             
               
-                招投标工程总结
+                DOM
               
             
           </h1>
@@ -317,8 +338,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="Дата создания записи" itemprop="dateCreated datePublished" datetime="2016-03-24T22:16:38+08:00">
-                2016-03-24
+              <time title="Дата создания записи" itemprop="dateCreated datePublished" datetime="2017-01-24T12:16:38+08:00">
+                2017-01-24
               </time>
             
 
@@ -358,8 +379,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/post/招投标工程总结/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="post/招投标工程总结/" itemprop="commentCount"></span>
+                <a href="/post/DOM/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="post/DOM/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -385,15 +406,40 @@
       
 
       
-        <h4 id="工程实践2感悟"><a href="#工程实践2感悟" class="headerlink" title="工程实践2感悟"></a>工程实践2感悟</h4><ul>
-<li>写代码的过程中要实时写注释，不要拖到工程完成时才来写注释，这时可能前面写的代码当时的思路已经忘记了，注释的目的为了以后自己重构时方便理解，同时也给其他开发者能轻松读懂你的代码</li>
-<li>在写代码开始前，对整个工程的设计很重要，这关系到后面写代码的困难与否。你设计时想的越透彻后面写代码时就越轻松。</li>
-<li>注重考虑用户的感受，我觉得软件是做给用户用的，就必须让用户用起来很方便，没有什么学习软件的成本。如果是大型软件，就应该给出用户手册，尽量减少用户学习软件的时间。细节方面我觉得最为重要，往往细节决定成败，这在软件上表现的更明显。细节对用户的心里感受最明显。体现的方面有软件的美工，布局，逻辑。或许你觉得我实现了所有功能，可是你没有实现用户想要的那个功能就是耍流氓。</li>
-<li><p>对于异常的处理，在认为有可能出现的异常的地方都要加上异常的处理，这体现代码的安全性，其实也是对用户体验的考虑，c#如果你未进行异常处理的时候出现了异常，这是.net会把错误抛给操作系统，操作系统一般会终结这个程序，这大大降低了用户的体验。</p>
-</li>
-<li><p>实时思考，想到了就去实现，不然会忘的。</p>
-</li>
+        <h2 id="DOM操作"><a href="#DOM操作" class="headerlink" title="DOM操作"></a>DOM操作</h2><h3 id="节点是有类型的"><a href="#节点是有类型的" class="headerlink" title="节点是有类型的"></a>节点是有类型的</h3><ul>
+<li>-&gt; 标准DOM定 义中有12种<pre><code>-&gt; 元素节点        1
+-&gt; 文本节点        3
+-&gt; 属性节点        2
+-&gt; 获得方式
+</code></pre><h3 id="为节点添加事件的方法"><a href="#为节点添加事件的方法" class="headerlink" title="为节点添加事件的方法"></a>为节点添加事件的方法</h3></li>
+<li>L<node>.onclick = function() {};</node></li>
 </ul>
+<h3 id="如何获得节点"><a href="#如何获得节点" class="headerlink" title="如何获得节点"></a>如何获得节点</h3><ul>
+<li><p><strong>节点对象</strong>  document.getElementById(“id的字符串”)</p>
+<pre><code>获得页面中指定id的节点对象
+</code></pre></li>
+<li><p><strong>节点集合</strong>  document.getElementsByTagName(“标签名”);<br>// 可以使用”*“”获得页面中所有标签名符合要求的标签</p>
+</li>
+<li><p><strong>节点集合</strong> 父节点.getElementsByTagName(“标签名”);</p>
+<pre><code>获得指定父节点下的所有名字符合要求的节点
+</code></pre></li>
+<li><strong>属性</strong>(如果是元素节点，那么他可以有子节点)<br><node>.childNodes    获得节点下的所有子节点<pre><code>&lt;node&gt;.firstChild    &lt;node&gt;.childNodes[0]    
+&lt;node&gt;.lastChild    &lt;node&gt;.childNodes[&lt;node&gt;.childNodes.length - 1]
+</code></pre><h3 id="修改节点"><a href="#修改节点" class="headerlink" title="修改节点"></a>修改节点</h3></node></li>
+</ul>
+<p>-&gt; 所谓的修改节点就是修改节点的属性与包含的文本<br>        -&gt; 获得节点<br>        -&gt; 修改属性的标准方法（DOM-Core）<br>            <node>.setAttribute(“属性名”, “值”);<br>            文本 <node>.getAttribute(“属性名”);<br>        -&gt; DOM-html<br>            <node>.属性名 = 值;<br>            var v = <node>.属性名;</node></node></node></node></p>
+<h3 id="添加节点"><a href="#添加节点" class="headerlink" title="添加节点"></a>添加节点</h3><ul>
+<li>创建节点</li>
+</ul>
+<blockquote>
+<p>-&gt; 元素节点：var node = document.createElement(“标签名”);<br>        -&gt; 文本节点：<br>            var textNode = document.createTextNode(“文本”);<br>            &lt;节点&gt;.innerHTML = “文本”;  // 这里可以使用html<br>            &lt;节点&gt;.innerText = “文本”;     // 非标准<br>        -&gt; 属性节点：<br>            &lt;节点&gt;.setAttribute(…, …);<br>            // 标准方法，符合xml规范，可以添加任意的属性<br>            // <a href="...." jk="jk">测试</a><br>            // aNode.jk = “jk”; // 部分浏览器是可以的</p>
+</blockquote>
+<ul>
+<li>追加节点</li>
+</ul>
+<blockquote>
+<p>-&gt; 追加到尾部：<br>            父节点.appendChild(子节点);<br>        -&gt; 插入到中间（插入到某一个元素的前面）：<br>            父节点.insertBefore(新元素, 旧元素);</p>
+</blockquote>
 
       
     </div>
@@ -417,9 +463,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/net/" rel="tag"># .net</a>
+            <a href="/tags/DOM/" rel="tag"># DOM</a>
           
-            <a href="/tags/c/" rel="tag"># c#</a>
+            <a href="/tags/JavaScript/" rel="tag"># JavaScript</a>
           
         </div>
       
@@ -432,8 +478,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/post/reges/" rel="next" title="正则表达式常用">
-                <i class="fa fa-chevron-left"></i> 正则表达式常用
+              <a href="/post/BOM/" rel="next" title="BOM">
+                <i class="fa fa-chevron-left"></i> BOM
               </a>
             
           </div>
@@ -442,8 +488,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/post/google搜索技巧/" rel="prev" title="google搜索技巧">
-                google搜索技巧 <i class="fa fa-chevron-right"></i>
+              <a href="/post/黄山之行/" rel="prev" title="黄山之行">
+                黄山之行 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -470,8 +516,8 @@
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="post/招投标工程总结/"
-           data-title="招投标工程总结" data-url="http://wsgzao.github.io/post/招投标工程总结/">
+      <div class="ds-thread" data-thread-key="post/DOM/"
+           data-title="DOM" data-url="http://wsgzao.github.io/post/DOM/">
       </div>
     
   </div>
@@ -578,7 +624,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#工程实践2感悟"><span class="nav-number">1.</span> <span class="nav-text">工程实践2感悟</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#DOM操作"><span class="nav-number">1.</span> <span class="nav-text">DOM操作</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#节点是有类型的"><span class="nav-number">1.1.</span> <span class="nav-text">节点是有类型的</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#为节点添加事件的方法"><span class="nav-number">1.2.</span> <span class="nav-text">为节点添加事件的方法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#如何获得节点"><span class="nav-number">1.3.</span> <span class="nav-text">如何获得节点</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#修改节点"><span class="nav-number">1.4.</span> <span class="nav-text">修改节点</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#添加节点"><span class="nav-number">1.5.</span> <span class="nav-text">添加节点</span></a></li></ol></li></ol></div>
             
 
           </div>

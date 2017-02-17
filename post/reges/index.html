@@ -71,7 +71,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content=".net,c#," />
+  <meta name="keywords" content="正则表达式，总结," />
 
 
 
@@ -89,25 +89,115 @@
 
 
 
-<meta name="description" content="工程实践2感悟
-写代码的过程中要实时写注释，不要拖到工程完成时才来写注释，这时可能前面写的代码当时的思路已经忘记了，注释的目的为了以后自己重构时方便理解，同时也给其他开发者能轻松读懂你的代码
-在写代码开始前，对整个工程的设计很重要，这关系到后面写代码的困难与否。你设计时想的越透彻后面写代码时就越轻松。
-注重考虑用户的感受，我觉得软件是做给用户用的，就必须让用户用起来很方便，没有什么学习软件的成本。">
+<meta name="description" content="正则表达式元字符
+基本元字符：
+
+
+.            [ ]            |            ()
+
+
+限定元字符
+
+
+   +
+ *
+ ?
+{n}
+{n,}
+{n,m}
+
+
+首尾元字符
+
+^
+$
+
+
+简写形式
+
+\d    \D
+\w    \W
+\s    \S
+
+
+
+创建一个正则表达式(javascript)
+字面值：var regex = /\d+/;">
 <meta property="og:type" content="article">
-<meta property="og:title" content="招投标工程总结">
-<meta property="og:url" content="http://wsgzao.github.io/post/招投标工程总结/index.html">
+<meta property="og:title" content="正则表达式常用">
+<meta property="og:url" content="http://wsgzao.github.io/post/reges/index.html">
 <meta property="og:site_name" content="Yune">
-<meta property="og:description" content="工程实践2感悟
-写代码的过程中要实时写注释，不要拖到工程完成时才来写注释，这时可能前面写的代码当时的思路已经忘记了，注释的目的为了以后自己重构时方便理解，同时也给其他开发者能轻松读懂你的代码
-在写代码开始前，对整个工程的设计很重要，这关系到后面写代码的困难与否。你设计时想的越透彻后面写代码时就越轻松。
-注重考虑用户的感受，我觉得软件是做给用户用的，就必须让用户用起来很方便，没有什么学习软件的成本。">
-<meta property="og:updated_time" content="2016-03-24T14:39:11.826Z">
+<meta property="og:description" content="正则表达式元字符
+基本元字符：
+
+
+.            [ ]            |            ()
+
+
+限定元字符
+
+
+   +
+ *
+ ?
+{n}
+{n,}
+{n,m}
+
+
+首尾元字符
+
+^
+$
+
+
+简写形式
+
+\d    \D
+\w    \W
+\s    \S
+
+
+
+创建一个正则表达式(javascript)
+字面值：var regex = /\d+/;">
+<meta property="og:updated_time" content="2017-02-17T06:43:02.004Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="招投标工程总结">
-<meta name="twitter:description" content="工程实践2感悟
-写代码的过程中要实时写注释，不要拖到工程完成时才来写注释，这时可能前面写的代码当时的思路已经忘记了，注释的目的为了以后自己重构时方便理解，同时也给其他开发者能轻松读懂你的代码
-在写代码开始前，对整个工程的设计很重要，这关系到后面写代码的困难与否。你设计时想的越透彻后面写代码时就越轻松。
-注重考虑用户的感受，我觉得软件是做给用户用的，就必须让用户用起来很方便，没有什么学习软件的成本。">
+<meta name="twitter:title" content="正则表达式常用">
+<meta name="twitter:description" content="正则表达式元字符
+基本元字符：
+
+
+.            [ ]            |            ()
+
+
+限定元字符
+
+
+   +
+ *
+ ?
+{n}
+{n,}
+{n,m}
+
+
+首尾元字符
+
+^
+$
+
+
+简写形式
+
+\d    \D
+\w    \W
+\s    \S
+
+
+
+创建一个正则表达式(javascript)
+字面值：var regex = /\d+/;">
 
 
 
@@ -135,13 +225,13 @@
 
 
 
-  <link rel="canonical" href="http://wsgzao.github.io/post/招投标工程总结/"/>
+  <link rel="canonical" href="http://wsgzao.github.io/post/reges/"/>
 
 
 
 
 
-  <title> 招投标工程总结 | Yune </title>
+  <title> 正则表达式常用 | Yune </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -278,7 +368,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="http://wsgzao.github.io/post/招投标工程总结/">
+  <link itemprop="mainEntityOfPage" href="http://wsgzao.github.io/post/reges/">
 
   <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
     <meta itemprop="name" content="Yune">
@@ -302,7 +392,7 @@
             
             
               
-                招投标工程总结
+                正则表达式常用
               
             
           </h1>
@@ -317,8 +407,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="Дата создания записи" itemprop="dateCreated datePublished" datetime="2016-03-24T22:16:38+08:00">
-                2016-03-24
+              <time title="Дата создания записи" itemprop="dateCreated datePublished" datetime="2016-02-10T18:16:38+08:00">
+                2016-02-10
               </time>
             
 
@@ -358,8 +448,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/post/招投标工程总结/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="post/招投标工程总结/" itemprop="commentCount"></span>
+                <a href="/post/reges/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="post/reges/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -385,14 +475,48 @@
       
 
       
-        <h4 id="工程实践2感悟"><a href="#工程实践2感悟" class="headerlink" title="工程实践2感悟"></a>工程实践2感悟</h4><ul>
-<li>写代码的过程中要实时写注释，不要拖到工程完成时才来写注释，这时可能前面写的代码当时的思路已经忘记了，注释的目的为了以后自己重构时方便理解，同时也给其他开发者能轻松读懂你的代码</li>
-<li>在写代码开始前，对整个工程的设计很重要，这关系到后面写代码的困难与否。你设计时想的越透彻后面写代码时就越轻松。</li>
-<li>注重考虑用户的感受，我觉得软件是做给用户用的，就必须让用户用起来很方便，没有什么学习软件的成本。如果是大型软件，就应该给出用户手册，尽量减少用户学习软件的时间。细节方面我觉得最为重要，往往细节决定成败，这在软件上表现的更明显。细节对用户的心里感受最明显。体现的方面有软件的美工，布局，逻辑。或许你觉得我实现了所有功能，可是你没有实现用户想要的那个功能就是耍流氓。</li>
-<li><p>对于异常的处理，在认为有可能出现的异常的地方都要加上异常的处理，这体现代码的安全性，其实也是对用户体验的考虑，c#如果你未进行异常处理的时候出现了异常，这是.net会把错误抛给操作系统，操作系统一般会终结这个程序，这大大降低了用户的体验。</p>
+        <h2 id="正则表达式"><a href="#正则表达式" class="headerlink" title="正则表达式"></a>正则表达式</h2><h3 id="元字符"><a href="#元字符" class="headerlink" title="元字符"></a>元字符</h3><ul>
+<li>基本元字符：</li>
+</ul>
+<blockquote>
+<p>.<br>            [ ]<br>            |<br>            ()</p>
+</blockquote>
+<ul>
+<li>限定元字符</li>
+</ul>
+<blockquote>
+<pre><code>   +
+ *
+ ?
+{n}
+{n,}
+{n,m}
+</code></pre></blockquote>
+<ul>
+<li><p>首尾元字符</p>
+<blockquote>
+<p>^</p>
+<pre><code>$
+</code></pre></blockquote>
 </li>
-<li><p>实时思考，想到了就去实现，不然会忘的。</p>
+<li><p>简写形式</p>
+<blockquote>
+<p>\d    \D</p>
+<pre><code>\w    \W
+\s    \S
+</code></pre></blockquote>
 </li>
+</ul>
+<h3 id="创建一个正则表达式-javascript"><a href="#创建一个正则表达式-javascript" class="headerlink" title="创建一个正则表达式(javascript)"></a>创建一个正则表达式(javascript)</h3><blockquote>
+<p>字面值：var regex = /\d+/;<br>        构造函数：var regex = new RegExp(“\d+”);</p>
+<h3 id="匹配"><a href="#匹配" class="headerlink" title="匹配"></a>匹配</h3><p>// bool Regex.IsMatch(字符串, 正则);<br>        // boolen 正则表达式对象.test(字符串);</p>
+</blockquote>
+<h3 id="提取"><a href="#提取" class="headerlink" title="提取"></a>提取</h3><blockquote>
+<p>// 提取使用方法<br>        // 像数组的对象 正则表达式对象.exec(字符串);<br>        // 这个对象的[0]是匹配到的结果<br>        // 这个[1]、[2]、…是各个组</p>
+<p>// 在正则后面加上一个g，表示全局模式<br>// 循环提取使用的方法与刚才是一样的，不同的是需要循环调用exec方法<br>//每次方法匹配一个，循环匹配结束后返回null，然后又从新的一轮开始</p>
+</blockquote>
+<h3 id="替换"><a href="#替换" class="headerlink" title="替换"></a>替换</h3><ul>
+<li>string <string>.replace(正则表达式或字符串, 替换为的字符串);</string></li>
 </ul>
 
       
@@ -417,9 +541,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/net/" rel="tag"># .net</a>
-          
-            <a href="/tags/c/" rel="tag"># c#</a>
+            <a href="/tags/正则表达式，总结/" rel="tag"># 正则表达式，总结</a>
           
         </div>
       
@@ -432,8 +554,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/post/reges/" rel="next" title="正则表达式常用">
-                <i class="fa fa-chevron-left"></i> 正则表达式常用
+              <a href="/post/javascriptbasic/" rel="next" title="JavaScript">
+                <i class="fa fa-chevron-left"></i> JavaScript
               </a>
             
           </div>
@@ -442,8 +564,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/post/google搜索技巧/" rel="prev" title="google搜索技巧">
-                google搜索技巧 <i class="fa fa-chevron-right"></i>
+              <a href="/post/招投标工程总结/" rel="prev" title="招投标工程总结">
+                招投标工程总结 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -470,8 +592,8 @@
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="post/招投标工程总结/"
-           data-title="招投标工程总结" data-url="http://wsgzao.github.io/post/招投标工程总结/">
+      <div class="ds-thread" data-thread-key="post/reges/"
+           data-title="正则表达式常用" data-url="http://wsgzao.github.io/post/reges/">
       </div>
     
   </div>
@@ -578,7 +700,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#工程实践2感悟"><span class="nav-number">1.</span> <span class="nav-text">工程实践2感悟</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#正则表达式"><span class="nav-number">1.</span> <span class="nav-text">正则表达式</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#元字符"><span class="nav-number">1.1.</span> <span class="nav-text">元字符</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#创建一个正则表达式-javascript"><span class="nav-number">1.2.</span> <span class="nav-text">创建一个正则表达式(javascript)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#匹配"><span class="nav-number">1.3.</span> <span class="nav-text">匹配</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#提取"><span class="nav-number">1.4.</span> <span class="nav-text">提取</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#替换"><span class="nav-number">1.5.</span> <span class="nav-text">替换</span></a></li></ol></li></ol></div>
             
 
           </div>
