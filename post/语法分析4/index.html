@@ -71,7 +71,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="DOM,JavaScript," />
+  <meta name="keywords" content="编译原理，语法分析," />
 
 
 
@@ -89,46 +89,52 @@
 
 
 
-<meta name="description" content="DOM操作节点是有类型的
--&amp;gt; 标准DOM定 义中有12种-&amp;gt; 元素节点        1
--&amp;gt; 文本节点        3
--&amp;gt; 属性节点        2
--&amp;gt; 获得方式
-为节点添加事件的方法
-L.onclick = function() {};
+<meta name="description" content="语法分析-自上而下分析语法分析器的功能功能
+按照文法的产生式（语言的语法规则），识别输入串是否为一个句子（合式程序
 
-如何获得节点
-节点对象  document.getElementById(“id的字符串”)
-获得页面中指定id的节">
+基本思想
+输入串开始，逐步进行“归约”，直到文法的开始符号。即从树末端开始，构造语法树。所谓归约，是指根据文法的产生式规则，把产生式的右部替换成左部符号
+
+）
+自上而下分析面临的问题
+回溯，内存比较大，避免文法的左递归
+
+LL（1）分析法左递归的消除
+直接左递归的消除
+间接左递归的">
 <meta property="og:type" content="article">
-<meta property="og:title" content="DOM">
-<meta property="og:url" content="http://wsgzao.github.io/post/DOM/index.html">
+<meta property="og:title" content="语法分析-自上而下">
+<meta property="og:url" content="http://wsgzao.github.io/post/语法分析4/index.html">
 <meta property="og:site_name" content="Yune">
-<meta property="og:description" content="DOM操作节点是有类型的
--&amp;gt; 标准DOM定 义中有12种-&amp;gt; 元素节点        1
--&amp;gt; 文本节点        3
--&amp;gt; 属性节点        2
--&amp;gt; 获得方式
-为节点添加事件的方法
-L.onclick = function() {};
+<meta property="og:description" content="语法分析-自上而下分析语法分析器的功能功能
+按照文法的产生式（语言的语法规则），识别输入串是否为一个句子（合式程序
 
-如何获得节点
-节点对象  document.getElementById(“id的字符串”)
-获得页面中指定id的节">
-<meta property="og:updated_time" content="2017-02-17T06:32:40.337Z">
+基本思想
+输入串开始，逐步进行“归约”，直到文法的开始符号。即从树末端开始，构造语法树。所谓归约，是指根据文法的产生式规则，把产生式的右部替换成左部符号
+
+）
+自上而下分析面临的问题
+回溯，内存比较大，避免文法的左递归
+
+LL（1）分析法左递归的消除
+直接左递归的消除
+间接左递归的">
+<meta property="og:updated_time" content="2017-03-12T08:41:18.799Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="DOM">
-<meta name="twitter:description" content="DOM操作节点是有类型的
--&amp;gt; 标准DOM定 义中有12种-&amp;gt; 元素节点        1
--&amp;gt; 文本节点        3
--&amp;gt; 属性节点        2
--&amp;gt; 获得方式
-为节点添加事件的方法
-L.onclick = function() {};
+<meta name="twitter:title" content="语法分析-自上而下">
+<meta name="twitter:description" content="语法分析-自上而下分析语法分析器的功能功能
+按照文法的产生式（语言的语法规则），识别输入串是否为一个句子（合式程序
 
-如何获得节点
-节点对象  document.getElementById(“id的字符串”)
-获得页面中指定id的节">
+基本思想
+输入串开始，逐步进行“归约”，直到文法的开始符号。即从树末端开始，构造语法树。所谓归约，是指根据文法的产生式规则，把产生式的右部替换成左部符号
+
+）
+自上而下分析面临的问题
+回溯，内存比较大，避免文法的左递归
+
+LL（1）分析法左递归的消除
+直接左递归的消除
+间接左递归的">
 
 
 
@@ -156,13 +162,13 @@ L.onclick = function() {};
 
 
 
-  <link rel="canonical" href="http://wsgzao.github.io/post/DOM/"/>
+  <link rel="canonical" href="http://wsgzao.github.io/post/语法分析4/"/>
 
 
 
 
 
-  <title> DOM | Yune </title>
+  <title> 语法分析-自上而下 | Yune </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -299,7 +305,7 @@ L.onclick = function() {};
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="http://wsgzao.github.io/post/DOM/">
+  <link itemprop="mainEntityOfPage" href="http://wsgzao.github.io/post/语法分析4/">
 
   <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
     <meta itemprop="name" content="Yune">
@@ -323,7 +329,7 @@ L.onclick = function() {};
             
             
               
-                DOM
+                语法分析-自上而下
               
             
           </h1>
@@ -338,8 +344,8 @@ L.onclick = function() {};
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="Дата создания записи" itemprop="dateCreated datePublished" datetime="2017-01-24T12:16:38+08:00">
-                2017-01-24
+              <time title="Дата создания записи" itemprop="dateCreated datePublished" datetime="2017-02-26T19:16:38+08:00">
+                2017-02-26
               </time>
             
 
@@ -379,8 +385,8 @@ L.onclick = function() {};
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/post/DOM/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="post/DOM/" itemprop="commentCount"></span>
+                <a href="/post/语法分析4/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="post/语法分析4/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -406,40 +412,45 @@ L.onclick = function() {};
       
 
       
-        <h2 id="DOM操作"><a href="#DOM操作" class="headerlink" title="DOM操作"></a>DOM操作</h2><h3 id="节点是有类型的"><a href="#节点是有类型的" class="headerlink" title="节点是有类型的"></a>节点是有类型的</h3><ul>
-<li>-&gt; 标准DOM定 义中有12种<pre><code>-&gt; 元素节点        1
--&gt; 文本节点        3
--&gt; 属性节点        2
--&gt; 获得方式
-</code></pre><h3 id="为节点添加事件的方法"><a href="#为节点添加事件的方法" class="headerlink" title="为节点添加事件的方法"></a>为节点添加事件的方法</h3></li>
-<li>L<node>.onclick = function() {};</node></li>
+        <h2 id="语法分析-自上而下分析"><a href="#语法分析-自上而下分析" class="headerlink" title="语法分析-自上而下分析"></a>语法分析-自上而下分析</h2><h3 id="语法分析器的功能"><a href="#语法分析器的功能" class="headerlink" title="语法分析器的功能"></a>语法分析器的功能</h3><h4 id="功能"><a href="#功能" class="headerlink" title="功能"></a>功能</h4><ul>
+<li>按照<strong>文法的产生式</strong>（语言的语法规则），识别输入串是否为一个句子（合式程序</li>
 </ul>
-<h3 id="如何获得节点"><a href="#如何获得节点" class="headerlink" title="如何获得节点"></a>如何获得节点</h3><ul>
-<li><p><strong>节点对象</strong>  document.getElementById(“id的字符串”)</p>
-<pre><code>获得页面中指定id的节点对象
-</code></pre></li>
-<li><p><strong>节点集合</strong>  document.getElementsByTagName(“标签名”);<br>// 可以使用”*“”获得页面中所有标签名符合要求的标签</p>
+<h4 id="基本思想"><a href="#基本思想" class="headerlink" title="基本思想"></a>基本思想</h4><ul>
+<li>输入串开始，逐步进行“<strong>归约</strong>”，直到文法的开始符号。即从树末端开始，构造语法树。所谓归约，是指根据文法的产生式规则，把产生式的右部替换成左部符号</li>
+</ul>
+<p>）</p>
+<h3 id="自上而下分析面临的问题"><a href="#自上而下分析面临的问题" class="headerlink" title="自上而下分析面临的问题"></a>自上而下分析面临的问题</h3><ul>
+<li><strong>回溯</strong>，内存比较大，避免文法的<strong>左递归</strong></li>
+</ul>
+<h3 id="LL（1）分析法"><a href="#LL（1）分析法" class="headerlink" title="LL（1）分析法"></a>LL（1）分析法</h3><h4 id="左递归的消除"><a href="#左递归的消除" class="headerlink" title="左递归的消除"></a>左递归的消除</h4><ul>
+<li>直接左递归的消除</li>
+<li>间接左递归的消除</li>
+<li>提取左公共因子，克服回溯<h4 id="LL-1-文法的条件"><a href="#LL-1-文法的条件" class="headerlink" title="LL(1)文法的条件"></a>LL(1)文法的条件</h4></li>
+<li>FIRST、FOLLOW集合</li>
+<li><strong>First</strong>集合顾名思义就是求一个文法符号串所可能推导出的符号串的第一个终结符的集合。<br><strong>First（X）</strong>就是求X所有推导出的符号串的第一个符号的集合。</li>
+<li><strong>Follow</strong>集合也是顾名思义的，就是文法符号后面可能跟随的终结符的集合（不包括空 串ε）。<br><strong>Follow(X)</strong>就是求X后面可能跟随的符号集合。</li>
+<li>终结符的Follow集合没有定义，只有非终结符才会有Follow集合。</li>
+<li><strong>Select集合</strong>就是产生式左部的可能的推导结果的起始符号。<br><strong>Select（A–&gt;B）</strong>就是求这个产生式中A可能推导出起始符号集合（不包含空串ε）。</li>
+<li><strong>Select集合</strong>：<br>对于产生式A—&gt;α。集合select（A—&gt;α）定义如下：<ol>
+<li>若α不能推出ε，则select（A—&gt;α） = first（α）。</li>
+<li>若α能推出ε，则select（A—&gt;α）= first（α）∪ follow(A)。</li>
+</ol>
 </li>
-<li><p><strong>节点集合</strong> 父节点.getElementsByTagName(“标签名”);</p>
-<pre><code>获得指定父节点下的所有名字符合要求的节点
-</code></pre></li>
-<li><strong>属性</strong>(如果是元素节点，那么他可以有子节点)<br><node>.childNodes    获得节点下的所有子节点<pre><code>&lt;node&gt;.firstChild    &lt;node&gt;.childNodes[0]    
-&lt;node&gt;.lastChild    &lt;node&gt;.childNodes[&lt;node&gt;.childNodes.length - 1]
-</code></pre><h3 id="修改节点"><a href="#修改节点" class="headerlink" title="修改节点"></a>修改节点</h3></node></li>
 </ul>
-<p>-&gt; 所谓的修改节点就是修改节点的属性与包含的文本<br>        -&gt; 获得节点<br>        -&gt; 修改属性的标准方法（DOM-Core）<br>            <node>.setAttribute(“属性名”, “值”);<br>            文本 <node>.getAttribute(“属性名”);<br>        -&gt; DOM-html<br>            <node>.属性名 = 值;<br>            var v = <node>.属性名;</node></node></node></node></p>
-<h3 id="添加节点"><a href="#添加节点" class="headerlink" title="添加节点"></a>添加节点</h3><ul>
-<li>创建节点</li>
+<h3 id="递归下降分析程序构造"><a href="#递归下降分析程序构造" class="headerlink" title="递归下降分析程序构造"></a>递归下降分析程序构造</h3><h4 id="构造不带回溯的自上而下分析程序"><a href="#构造不带回溯的自上而下分析程序" class="headerlink" title="构造不带回溯的自上而下分析程序"></a>构造不带回溯的自上而下分析程序</h4><ul>
+<li>要消除文法的左递归性</li>
+<li>克服回溯</li>
 </ul>
-<blockquote>
-<p>-&gt; 元素节点：var node = document.createElement(“标签名”);<br>        -&gt; 文本节点：<br>            var textNode = document.createTextNode(“文本”);<br>            &lt;节点&gt;.innerHTML = “文本”;  // 这里可以使用html<br>            &lt;节点&gt;.innerText = “文本”;     // 非标准<br>        -&gt; 属性节点：<br>            &lt;节点&gt;.setAttribute(…, …);<br>            // 标准方法，符合xml规范，可以添加任意的属性<br>            // <a href="...." jk="jk">测试</a><br>            // aNode.jk = “jk”; // 部分浏览器是可以的</p>
-</blockquote>
-<ul>
-<li>追加节点</li>
+<h3 id="预测分析程序"><a href="#预测分析程序" class="headerlink" title="预测分析程序"></a>预测分析程序</h3><h4 id="LL-1-文法条件"><a href="#LL-1-文法条件" class="headerlink" title="LL(1)文法条件"></a>LL(1)文法条件</h4><ol>
+<li>文法不含左递归</li>
+<li>对于文法中每一个非终结符A的各个产生式的候选首符集两两不相交。即，若<br>A→ α1| α2|…| αn<br>则  FIRST( αi)∩FIRST( αj)＝Φ  (ij)</li>
+<li>对文法中的每个非终结符A，若它存在某个候选首符集包含，则<br>FIRST(αi)∩FOLLOW(A)=Φ<br>i=1,2,…,n</li>
+</ol>
+<p>如果一个文法G满足以上条件，则称该文法G为<strong>LL(1)文法</strong>。</p>
+<h4 id="分析表M-A，a-的构造"><a href="#分析表M-A，a-的构造" class="headerlink" title="分析表M[A，a]的构造"></a>分析表M[A，a]的构造</h4><ul>
+<li>构造FIRST()和FOLLOW(A)</li>
+<li>构造分析表M[A，a]</li>
 </ul>
-<blockquote>
-<p>-&gt; 追加到尾部：<br>            父节点.appendChild(子节点);<br>        -&gt; 插入到中间（插入到某一个元素的前面）：<br>            父节点.insertBefore(新元素, 旧元素);</p>
-</blockquote>
 
       
     </div>
@@ -463,9 +474,7 @@ L.onclick = function() {};
       
         <div class="post-tags">
           
-            <a href="/tags/DOM/" rel="tag"># DOM</a>
-          
-            <a href="/tags/JavaScript/" rel="tag"># JavaScript</a>
+            <a href="/tags/编译原理，语法分析/" rel="tag"># 编译原理，语法分析</a>
           
         </div>
       
@@ -478,8 +487,8 @@ L.onclick = function() {};
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/post/BOM/" rel="next" title="BOM">
-                <i class="fa fa-chevron-left"></i> BOM
+              <a href="/post/编译原理3词法分析/" rel="next" title="词法分析">
+                <i class="fa fa-chevron-left"></i> 词法分析
               </a>
             
           </div>
@@ -488,8 +497,8 @@ L.onclick = function() {};
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/post/黄山之行/" rel="prev" title="黄山之行">
-                黄山之行 <i class="fa fa-chevron-right"></i>
+              <a href="/post/语法分析5自下而上/" rel="prev" title="语法分析-自下而上">
+                语法分析-自下而上 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -516,8 +525,8 @@ L.onclick = function() {};
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="post/DOM/"
-           data-title="DOM" data-url="http://wsgzao.github.io/post/DOM/">
+      <div class="ds-thread" data-thread-key="post/语法分析4/"
+           data-title="语法分析-自上而下" data-url="http://wsgzao.github.io/post/语法分析4/">
       </div>
     
   </div>
@@ -624,7 +633,7 @@ L.onclick = function() {};
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#DOM操作"><span class="nav-number">1.</span> <span class="nav-text">DOM操作</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#节点是有类型的"><span class="nav-number">1.1.</span> <span class="nav-text">节点是有类型的</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#为节点添加事件的方法"><span class="nav-number">1.2.</span> <span class="nav-text">为节点添加事件的方法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#如何获得节点"><span class="nav-number">1.3.</span> <span class="nav-text">如何获得节点</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#修改节点"><span class="nav-number">1.4.</span> <span class="nav-text">修改节点</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#添加节点"><span class="nav-number">1.5.</span> <span class="nav-text">添加节点</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#语法分析-自上而下分析"><span class="nav-number">1.</span> <span class="nav-text">语法分析-自上而下分析</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#语法分析器的功能"><span class="nav-number">1.1.</span> <span class="nav-text">语法分析器的功能</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#功能"><span class="nav-number">1.1.1.</span> <span class="nav-text">功能</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#基本思想"><span class="nav-number">1.1.2.</span> <span class="nav-text">基本思想</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#自上而下分析面临的问题"><span class="nav-number">1.2.</span> <span class="nav-text">自上而下分析面临的问题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#LL（1）分析法"><span class="nav-number">1.3.</span> <span class="nav-text">LL（1）分析法</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#左递归的消除"><span class="nav-number">1.3.1.</span> <span class="nav-text">左递归的消除</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#LL-1-文法的条件"><span class="nav-number">1.3.2.</span> <span class="nav-text">LL(1)文法的条件</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#递归下降分析程序构造"><span class="nav-number">1.4.</span> <span class="nav-text">递归下降分析程序构造</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#构造不带回溯的自上而下分析程序"><span class="nav-number">1.4.1.</span> <span class="nav-text">构造不带回溯的自上而下分析程序</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#预测分析程序"><span class="nav-number">1.5.</span> <span class="nav-text">预测分析程序</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#LL-1-文法条件"><span class="nav-number">1.5.1.</span> <span class="nav-text">LL(1)文法条件</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#分析表M-A，a-的构造"><span class="nav-number">1.5.2.</span> <span class="nav-text">分析表M[A，a]的构造</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>
